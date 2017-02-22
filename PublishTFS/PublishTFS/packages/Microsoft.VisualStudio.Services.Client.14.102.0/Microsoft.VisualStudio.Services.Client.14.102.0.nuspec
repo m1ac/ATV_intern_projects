@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.VisualStudio.Services.Client</id>
+    <version>14.102.0</version>
+    <title>Microsoft Visual Studio Services Client</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=613084</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkId=615568</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Microsoft Visual Studio Services Client
+
+Integrate with Team Foundation Server 2015 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to shared platform services such as account, profile, identity, security, and more via public REST APIs.</description>
+    <summary />
+    <releaseNotes>14.102.0 corresponds to Visual Studio 2015 Update 3</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft Team Foundation Server TFS VSO Visual Studio VisualStudio Online REST Account Identity Profile Client Services Object Model OM VSTS</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.2" />
+        <dependency id="Newtonsoft.Json" version="6.0.8" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

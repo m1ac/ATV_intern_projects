@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    document.body.style.height = (window.screen.height) + "px";
+</script>
+
+<style>
+    body {
+        background: -webkit-linear-gradient(#000,#0af,#000);
+        background: -o-linear-gradient(#000,#0af,#000);
+        background: -moz-linear-gradient(#000,#0af,#000);
+        background: linear-gradient(#000,#0af,#000);
+        background-repeat:repeat-x;
+        background-size:70%;
+        overflow:hidden;
+    }
+    input {
+        background-color:transparent;
+        color:white;
+        height:30px;
+        font-size:large;
+        border:2px solid white;
+        border-radius:5px;
+    }
+</style>
+<div style="border-radius:15px;margin:auto;width:805px;margin-top:-20px;margin-left:310px;z-index:-1;position:absolute;background-color:black;height:265px;opacity:0.5;">
+
+</div>
+<div style="margin:auto;width:800px;margin-top:250px;">
+    <h2 style="margin:auto;width:150px;color:white;">Publish Page</h2>
+    <hr />
+    <form action="~/Publish" method="post">
+        <br />
+        <input name="txt_url" placeholder="TFS Url" value="@ViewBag.url" style="width: 49%;" />
+        <input name="txt_path" placeholder="Project Path" value="@ViewBag.path" style="width: 49%; " />
+        <br /><br />
+        <input name="txt_user" placeholder="User Name" value="@ViewBag.user" style="width: 49%; " />
+        <input name="txt_pass" type="password" placeholder="Password" value="@ViewBag.pass" style="width: 49%; " />
+        <br /><br />
+        <div style="margin:auto;width:200px;">
+            <input type="submit" value="Begin" style="width:100%;" />
+        </div>
+    </form>
+    <br />
+    <h3 style="margin:auto;width:80px;color:#b6ff00;">@ViewBag.result</h3>
+</div>
+
+

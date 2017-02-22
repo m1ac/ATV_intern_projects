@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Publish Page</h2>
+
+<form action="~/Publish" method="post">
+    <input id="txt_url" placeholder="Enter TFS Url" />
+    <input type="submit" value="Post"/>
+</form>
+
