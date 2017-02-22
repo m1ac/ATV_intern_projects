@@ -1,0 +1,2 @@
+Bu proje ASP.Net MVC teknolojisi ile yapıldı. İçerisinde 2 proje barındırıyor. İlki sunucuda bulunan dll dosyalarının debug yada release modlarından hangisi olduğunu söylüyor.
+Diğeri ise web.config gibi dosyaların içeriğini rahat bir şekilde okumak ve değiştirebilmek için basit arayüze sahip bir web uygulamasıdır.
