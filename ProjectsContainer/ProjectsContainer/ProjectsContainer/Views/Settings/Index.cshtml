@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Content/script/jquery-3.1.0.min.js"></script>
+
+<style>
+    input {
+        height: 20px;
+        margin: auto;
+        font-size: 10px;
+        background-color: transparent;
+        color: white;
+    }
+
+    p {
+        font-size: 25px;
+        text-align: center;
+        border: none;
+        color: white;
+    }
+</style>
+
+<script type="text/javascript">
+    function selectedIndexChanged() {
+        var txt = document.getElementById('txt1');
+        var select = document.getElementById('select');
+        txt.value = select.value;
+        select.style.visibility = 'hidden';
+    }
+
+        function find() {
+            var array = [];
+            @foreach (var d in ViewBag.veri)
+            {
+                @:array.push("@d");
+            }
+            var txt=document.getElementById('txt1');
+            var select = document.getElementById('select');
+            select.innerHTML = "";
+            if (txt.value.trim() != "") {
+                for (var i = 0; i < array.length; i++) {
+                    select.style.visibility = 'visible';
+                    if (String(array[i]).startsWith(txt.value)) {
+                        var option = document.createElement('option');
+                        option.text = array[i];
+                        select.add(option);
+                    }
+                }
+            }
+            else { select.style.visibility = 'hidden'; }
+        }
+</script>
+
+<div style="margin:auto;width:1350px;margin-top:50px;">
+
+    <form action="/Settings" id="form1" method="post">
+        <div style="width:500px;margin:auto;height:50px;margin-top:-40px;margin-bottom:10px;">
+            <div style="opacity:0.7;margin:auto;margin-left:-6px;margin-top:-5px;width:515px;background-color:black;z-index:-1;position:absolute;height:50px;"></div>
+            <input type="text" id="txt1" name="txt_value" onkeyup="find()" placeholder="Enter text" style="width:100%;height:35px;font-size:larger;" />
+            
+            <div style="width:500px;margin:auto;height:50px;margin-top:0px;position:absolute;">
+                <select id="select" multiple size="4" style="width:100%;visibility:hidden;" ondblclick="selectedIndexChanged()"></select>
+            </div>
+        </div>
+        
+        @*Config*@
+        <div style="opacity:0.5;margin-left:10px;width:750px;background-color:gray;z-index:-1;position:absolute;height:300px;"></div>
+        <div style="margin-left:10px;width:750px;height:300px;float:left;overflow-y:auto;">
+            <input type="submit" name="btn_addConfigPath" value="Add Bin Folder's Path of Config File" />
+            <br /><br />
+            <table style="margin-left:10px;color:white;width:97%;" border="1">
+                @{
+                    List<List<System.Xml.Linq.XElement>> m = new List<List<System.Xml.Linq.XElement>>(Model);
+                    foreach (var item in m[0])
+                    {
+                        <tr>
+                            <td>
+                                <input type="submit" onclick="return confirm('Silinsin mi?')" name="btn_deleteConfigPath" value="@item.Value.ToString()" style="width:100%;font-size:15px;height:25px;border:none;" />
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+
+        </div>
+
+        <div style="width: 550px; height: 300px; float: left; margin-left: 10px; overflow-y: auto;">
+            <div style="width: 550px; height: 300px; float: left; background-color: gray; opacity: 0.5; z-index: -1; position: absolute;"></div>
+            <input type="submit" name="btn_addConfigFilter" value="Add Filter for Config Key" />
+            <br /><br />
+            <table style="margin-left: 10px; color: white; width: 97%;" border="1">
+                @{
+                    foreach (var item in m[1])
+                    {
+                        <tr>
+                            <td>
+                                <input type="submit" onclick="return confirm('Silinsin mi?')" name="btn_deleteConfigFilter" value="@item.Value.ToString()" style="width:100%;font-size:15px;height:25px;border:none;" />
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+        <div style="width: 750px; height: 300px; float: left; margin-left: 10px; margin-top: 10px; overflow-y: auto;">
+            <div style="background-color: gray;opacity:0.5; width: 750px; height: 300px; float: left; z-index: -1; position: absolute;"></div>
+            <input type="submit" name="btn_addDllPath" value="Add Bin Folder's Path of Dll File" />
+            <br /><br />
+            <table style="margin-left: 10px; color: white; width: 97%;" border="1">
+                @{
+                    foreach (var item in m[2])
+                    {
+                        <tr>
+                            <td>
+                                <input type="submit" onclick="return confirm('Silinsin mi?')" name="btn_deleteDllPath" value="@item.Value.ToString()" style="width:100%;font-size:15px;height:25px;border:none;" />
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+
+        <div style="width: 550px; height: 300px; float: left; margin-top: 10px; margin-left: 10px; overflow-y: auto;">
+            <div style="width:550px;height:300px;float:left;background-color:gray;opacity:0.5;z-index:-1;position:absolute;"></div>
+            <input type="submit" name="btn_addDllFilter" value="Add Dll Name for Filter" />
+            <br /><br />
+            <table style="margin-left: 10px; color: white; width: 97%;" border="1">
+                @{
+                    foreach (var item in m[3])
+                    {
+                        <tr>
+                            <td>
+                                <input type="submit" onclick="return confirm('Silinsin mi?')" name="btn_deleteDllFilter" value="@item.Value.ToString()" style="width:100%;font-size:15px;height:25px;border:none;" />
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </form>
+</div>

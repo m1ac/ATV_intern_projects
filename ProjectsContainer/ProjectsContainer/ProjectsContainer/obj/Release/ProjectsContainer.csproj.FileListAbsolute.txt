@@ -1,0 +1,141 @@
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll.config
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.pdb
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\Antlr3.Runtime.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\EntityFramework.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Infrastructure.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.WebRequest.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Optimization.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Providers.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\WebGrease.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\EntityFramework.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.WebRequest.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.xml
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.dll
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.pdb
+c:\users\yazilim.stajyer3\documents\visual studio 2013\Projects\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.csprojResolveAssemblyReference.cache
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll.config
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.pdb
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\Antlr3.Runtime.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\EntityFramework.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Infrastructure.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.WebRequest.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Optimization.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Providers.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\WebGrease.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\EntityFramework.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.WebRequest.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.xml
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.dll
+\\BTA10783\Users\abdullah.cakir\Desktop\PublishControl\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.pdb
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll.config
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.pdb
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\Antlr3.Runtime.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\EntityFramework.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.WebRequest.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Optimization.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Providers.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\WebGrease.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\EntityFramework.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.WebRequest.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.xml
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.dll
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.pdb
+C:\Users\yazilim.stajyer3\Desktop\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.csprojResolveAssemblyReference.cache
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll.config
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\ProjectsContainer.pdb
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\Antlr3.Runtime.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\EntityFramework.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Optimization.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Providers.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\WebGrease.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\EntityFramework.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\Newtonsoft.Json.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.Formatting.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Http.WebHost.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Mvc.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.Razor.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Web.WebPages.Razor.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\bin\System.Net.Http.xml
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.csprojResolveAssemblyReference.cache
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.dll
+C:\Users\muham\Desktop\ProjectsContainer\ProjectsContainer\ProjectsContainer\obj\Release\ProjectsContainer.pdb

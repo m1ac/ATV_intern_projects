@@ -1,0 +1,134 @@
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: cornflowerblue;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    /* Option 1 - Display Inline */
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+
+
+
+/*Layout*/
+
+#main_banner{
+	width:100%;
+	height:58px;
+}
+ul {
+    display:inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display:inline;
+    background-color:#444;
+}
+a {
+    font-weight:bold;
+    font-size:17px;
+    margin:auto;
+    color:white;
+    text-decoration:none;
+}
+
+/*CheckDll*/
+
+    #banner {
+        width: 100%;
+        /*background-color: #444;*/
+        margin: 0px;
+    }
+
+    label {
+
+    }
+
+    #table_form {
+        color:white;
+        margin:auto;
+    }
+
+    #table_content {
+        background-color: lightgray;
+        margin: auto;
+        color: white;
+    }
+
+    #table-header {
+        background-color: black;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    #FirstRow {
+        color:black;
+        background-color:#ccc;
+        /*background-color:#009aff;*/
+    }
+
+    #SecondRow {
+        /*background-color:#9ec6f1;*/
+        background-color:#444;
+        color:white;
+    }
+
+    #label_border_right {
+        border-right:1px solid white;
+    }
+
+    #submit{
+        margin:auto;width:100px;border:none;background-color:lightgray;
+        font-weight:bold;height:22px;
+    }
+    #submit:hover{
+        background-color:#aaa;text-decoration:underline;
+    }
+	
+/*CheckConfig*/
+
+	#table_config {
+        background-color: lightgray;
+        margin: auto;
+        color: white;
+    }

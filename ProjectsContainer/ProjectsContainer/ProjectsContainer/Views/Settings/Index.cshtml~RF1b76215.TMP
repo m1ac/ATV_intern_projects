@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    input {
+        height:40px;
+        width:100%;
+        margin:5px;
+        font-size:25px;
+        background-color:transparent;
+        color:white;
+    }
+    legend {
+        color:white;
+    }
+</style>
+
+<div style="margin:auto;width:600px;margin-top:50px;">
+    <div style="opacity:0.7;margin:auto;width:615px;background-color:black;z-index:-1;position:absolute;height:500px;"></div>
+
+    <form action="/Settings" method="post">
+        <fieldset>
+            <legend>Config</legend>
+            <input type="text" name="txt_value" placeholder="Enter text" />
+            <input type="button" name="btn_addConfigPath" value="Add Bin Folder's Path of Config File" />
+            <input type="button" name="btn_deleteConfigPath" value="Delete Bin Folder's Path of Config File" />
+            <input type="button" name="btn_addConfigFilter" value="Add Filter for Config Key" />
+            <input type="button" name="btn_deleteConfigFilter" value="Delete Filter for Config Key" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Dll</legend>
+            <input type="button" name="btn_addConfigPath" value="Add Bin Folder's Path of Config File" />
+        </fieldset>
+    </form>
+</div>

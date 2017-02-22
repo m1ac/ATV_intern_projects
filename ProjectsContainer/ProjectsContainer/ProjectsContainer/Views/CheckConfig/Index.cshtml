@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Check Config";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p style="color:white;">@ViewBag.error</p>
+<table id="table_config">
+    <tr id="table-header">
+        <td>Key</td>
+        <td>Value</td>
+        <td>Path</td>
+    </tr>
+    @{
+    int say = 0;
+    string id = "";
+    foreach (var item in (List<ProjectsContainer.Models.Setting>)Model)
+    {
+        if (say % 2 == 0) { id = "FirstRow"; }
+        else { id = "SecondRow"; }
+        say++;
+        <tr id="@(id)">
+            <td>@(item.Name)</td>
+            <td>@(item.Value)</td>
+            <td>@(item.Path)</td>
+        </tr>
+    }
+}
+</table>
+

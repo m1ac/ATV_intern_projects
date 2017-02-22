@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@using (Html.BeginForm())
+{
+}*@
+
+<div style="background-color:#fff; opacity:0.3; width:100%; height:50px; position:absolute; z-index:-1;">
+    
+</div>
+
+<div id="banner" style="">
+    <table id="table_form">
+        <tr>
+            <td>
+                <form action="/CheckDll" method="post">
+                    <label style="border-right: 1px solid white; border-left: 1px solid white;">
+                        <input type="checkbox" name="cb_debug" checked="@ViewBag.cb_debug" />Debug
+                    </label>
+                    <label id="label_border_right">
+                        <input type="checkbox" name="cb_release" checked="@ViewBag.cb_release" />Release
+                    </label>
+                    <label id="label_border_right">
+                        <input type="checkbox" name="cb_dontRead" checked="@ViewBag.cb_dontRead" />Don't Read
+                    </label>
+                    <label id="label_border_right">
+                        <input type="checkbox" name="cb_nameFilter" checked="@ViewBag.cb_nameFilter" />Name Filter
+                    </label>
+                    <br />
+                    <div>
+                        <input type="submit" value="Apply Filter" id="submit" />
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<hr />
+<div style="overflow-y:scroll;height:630px;">
+    <table border="1" id="table_content">
+        <tr id="table-header">
+            <td>File Name</td>
+            <td>Mode</td>
+            <td>Full Path</td>
+        </tr>
+        @{
+    int say = 0;
+    string id = "";
+    foreach (var item in ((List<ProjectsContainer.Models.Dll>)Model))
+    {
+        if (say % 2 == 0) { id = "FirstRow"; }
+        else { id = "SecondRow"; }
+        say++;
+
+        <tr id="@(id)">
+            <td>@item.FileName</td>
+            <td>@item.Type</td>
+            <td>@item.FullPath</td>
+        </tr>
+    }
+}
+    </table>
+</div>

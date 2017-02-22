@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<p> @ViewBag.metin </p>
+<div>
+    @{
+        foreach (var item in ((List<ProjectsContainer.Models.Dll>)Model))
+        {
+            <p>
+                @item.FileName
+            </p>
+        }
+        @*List<ProjectsContainer.Models.Dll> data = new List<ProjectsContainer.Models.Dll>(ViewBag.data);
+        data[0].FileName.ToString();*@
+    } 
+</div>

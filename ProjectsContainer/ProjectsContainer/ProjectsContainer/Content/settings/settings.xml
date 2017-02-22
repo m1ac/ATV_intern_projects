@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <webConfig>
+    <path>C:\copy</path>
+  </webConfig>
+  <webConfigFilter>
+    <keyName>configSections/section/entityFramework</keyName>
+    <keyName>appSettings/add/IsDevelopment</keyName>
+    <keyName>appSettings/add/ClientValidationEnabled=true</keyName>
+    <keyName>appSettings/add/RouteDebug</keyName>
+    <keyName>appSettings/add/webpages:Version</keyName>
+    <keyName>appSettings/add/webpages:Enabled</keyName>
+    <keyName>appSettings/add/UnobtrusiveJavaScriptEnabled=true</keyName>
+  </webConfigFilter>
+  <dll>
+    <path>C:\dll</path>
+  </dll>
+  <dllFilter>
+    <dllName>SSOClient.dll</dllName>
+    <dllName>EntityFramework.dll</dllName>
+  </dllFilter>
+</settings>

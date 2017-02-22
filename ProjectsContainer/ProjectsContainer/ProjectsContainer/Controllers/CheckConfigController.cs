@@ -1,0 +1,241 @@
+﻿using ProjectsContainer.Models;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Xml;
+using System.Xml.Linq;
+
+namespace ProjectsContainer.Controllers
+{
+    public class CheckConfigController : Controller
+    {
+        //
+        // GET: /CheckConfig/
+
+        List<Setting> settings = new List<Setting>();
+        List<KeyValue> KeyList = new List<KeyValue>();
+        List<ElementsKey> RootList = new List<ElementsKey>();
+
+        void Read_xml()
+        {
+            string xmlFilePath = Server.MapPath("Content/settings") + "\\settings.xml";
+            XDocument xmlDoc = XDocument.Load(xmlFilePath);
+            var filterValueList = xmlDoc.Root.Element("webConfigFilter").Elements("keyName").ToList();
+            foreach (var item in filterValueList)
+            {
+                string[] bol_item = item.Value.Split('/');
+                string root = "";
+                for (int i = 0; i < bol_item.Length - 1; i++)
+                {
+                    root += bol_item[i] + "/";
+                }
+                root = root.Remove(root.Length - 1, 1);
+
+                string[] bol_att = bol_item[bol_item.Length - 1].Split('=');
+                string val = "";
+                if (bol_att.Length > 1)
+                {
+                    val = bol_att[1];
+                }
+                RootList.Add(new ElementsKey() { key = bol_att[0], value = val, rootList = root });
+                /*string[] bol_item = item.Value.Split('/');
+                string[] bol = bol_item[bol_item.Length - 1].Split('=');
+                if (bol.Length > 1)
+                {
+                    KeyList.Add(new KeyValue() { Key = bol[0], Value = bol[1].ToLower() });
+                }
+                else
+                {
+                    KeyList.Add(new KeyValue() { Key = bol[0], Value = "" });
+                }*/
+            }
+
+            var pathValueList = xmlDoc.Root.Element("webConfig").Elements("path").ToList();
+            foreach (var item in pathValueList)
+            {
+                Find_2(item.Value + "\\web.config");
+            }
+
+            #region txt_read
+
+            /*StreamReader oku1 = new StreamReader(Server.MapPath("Content/tmp_config")+"\\KeyList.txt");
+            string l = "";
+            while ((l = oku1.ReadLine()) != null)
+            {
+                string[] bol = l.Split('=');
+                if (bol.Length > 1)
+                {
+                    KeyList.Add(new KeyValue() { Key = bol[0], Value = bol[1].ToLower() });
+                }
+                else
+                {
+                    KeyList.Add(new KeyValue() { Key = bol[0], Value = "" });
+                }
+            }
+            oku1.Close();
+
+            StreamReader oku = new StreamReader(Server.MapPath("Content/tmp_config") + "\\PathList.txt");
+            string line = "";
+            while ((line = oku.ReadLine()) != null)
+            {
+                Find(line + "\\web.config");
+            }
+            oku.Close();*/
+
+            #endregion
+
+        }
+
+        void Find_2(string path)
+        {
+            System.IO.File.Copy(path, Server.MapPath("Content/tmp_config") + "\\Web.config");
+            XDocument xmlDoc = XDocument.Parse(System.IO.File.ReadAllText(Server.MapPath("Content/tmp_config") + "\\Web.config"));
+            List<XElement> liste = new List<XElement>();
+
+            foreach (var item in RootList)
+            {
+                liste.Clear();
+                string[] bol = item.rootList.Split('/');
+                liste = xmlDoc.Root.Elements(bol[0]).ToList();
+                for (int i = 1; i < bol.Length; i++)
+                {
+                    liste = liste.Elements(bol[i]).ToList();
+                }
+
+                liste.RemoveAll(x => x.FirstAttribute.Value != item.key);
+                
+                if (item.value != "" && !liste.Select(x=>x.LastAttribute.Value).ToList().Contains(item.value))
+                {
+                    continue;
+                }
+                else
+                {
+                    foreach (var liste_item in liste)
+                    {
+                        settings.Add(new Setting() { Name = item.rootList + "/" + liste_item.FirstAttribute.Value, Value = liste_item.LastAttribute.Value, Path = path });
+                    }
+                }
+                //liste = xEl.Elements(bol[bol.Length - 1]).Where(x => x.FirstAttribute.Value == item.key).ToList();
+            }
+            System.IO.File.Delete(Server.MapPath("Content/tmp_config") + "\\Web.config");
+        }
+
+        void Find(string path)
+        {
+            try
+            {
+                System.IO.File.Copy(path, Server.MapPath("Content/tmp_config") + "\\Web.config");
+                XDocument xmlDoc = XDocument.Parse(System.IO.File.ReadAllText(Server.MapPath("Content/tmp_config") + "\\Web.config"));
+                List<XElement> liste = new List<XElement>();
+
+                foreach (var item in RootList)
+                {
+                    try
+                    {
+                        liste.Clear();
+                        string[] bol = item.rootList.Split('/');
+                        XElement xEl = xmlDoc.Root.Element(bol[0]);
+                        if (bol.Length < 3)
+                        {
+                            liste = xEl.Elements(bol[bol.Length - 1]).Where(x => x.FirstAttribute.Value == item.key).ToList();
+                        }
+                        else
+                        {
+                            for (int i = 1; i < bol.Length - 1; i++)
+                            {
+                                xEl = xEl.Element(bol[i]);
+                            }
+                            liste = xEl.Elements(bol[bol.Length - 1]).Where(x => x.FirstAttribute.Value == item.key).ToList();
+                        }
+
+
+                        string[] bol_att = item.key.Split('=');
+                        string val = "";
+                        if (bol_att.Length > 1)
+                        {
+                            val = bol_att[1];
+                        }
+
+                        foreach (var keys in liste)
+                        {
+                            if ((val != "") && (val.ToLower() != keys.LastAttribute.Value.ToString().ToLower()))
+                            {
+                                continue;
+                            }
+                            else
+                            {
+                                settings.Add(new Setting() { Name = keys.FirstAttribute.Value, Value = keys.LastAttribute.Value, Path = path });
+                            }
+                        }
+
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+                }
+                
+                /*try
+                {
+                    liste.AddRange(xmlDoc.Root.Element("location").Element("appSettings").Elements("add").ToList());
+                }
+                catch (Exception)
+                {
+                    liste.AddRange(xmlDoc.Root.Element("appSettings").Elements("add").ToList());
+                }*/
+                /*foreach (var item in liste)
+                {
+                    if (KeyList.Select(x => x.Key).ToList().Contains(item.FirstAttribute.Value))
+                    {
+                        string val = ((KeyValue)KeyList.Where(x => x.Key == item.FirstAttribute.Value).ToList()[0]).Value;
+                        if ((val != "") && (val.ToLower() != item.LastAttribute.Value.ToString().ToLower()))
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            settings.Add(new Setting() { Name = item.FirstAttribute.Value, Value = item.LastAttribute.Value, Path = path });
+                        }
+                    }
+                }*/
+                
+                /*foreach (XmlNode item in pNode.SelectNodes("appSettings"))
+                {
+                    foreach (XmlNode add in item.SelectNodes("add"))
+                    {
+                        if (KeyList.Select(x => x.Key).ToList().Contains(add.Attributes[0].Value))
+                        {
+                            string val = ((KeyValue)KeyList.Where(x => x.Key == add.Attributes[0].Value).ToList()[0]).Value;
+                            if ((val != "") && (val.ToLower() != add.Attributes[1].Value.ToString().ToLower()))
+                            {
+                                continue;
+                            }
+                            else
+                            {
+                                settings.Add(new Setting() { Name = add.Attributes[0].Value, Value = add.Attributes[1].Value, Path = path });
+                            }
+                        }
+                    }
+                }*/
+                System.IO.File.Delete(Server.MapPath("Content/tmp_config") + "\\Web.config");
+            }
+            catch (Exception h)
+            {
+                ViewBag.error = h.Message;
+            }
+            
+            //dt1.ItemsSource = settings.ToList();
+        }
+
+        public ActionResult Index()
+        {
+            ViewBag.activeConfig = "active";
+            Read_xml();
+            return View(settings);
+        }
+
+    }
+}

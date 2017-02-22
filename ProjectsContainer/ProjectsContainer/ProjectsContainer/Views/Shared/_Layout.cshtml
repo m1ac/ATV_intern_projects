@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css/style.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+    </style>
+</head>
+<body style="margin: 0px; background-image: url(/Content/img/1.jpg); background-repeat: no-repeat; background-size: 100%; ">
+    <div style="background-color: #545; opacity:0.5; position: absolute; width: 100%; height: 55px; z-index: -1;">
+
+    </div>
+    <div id="main_banner">
+        <table style="margin:auto;">
+            <tr style="height:45px;width:100%;">
+                <td>
+                    <div class="nav">
+                        <ul>
+                            <li><a class="@(ViewBag.activeDll)" href="/CheckDll">Check Dll</a></li>
+                            <li><a class="@(ViewBag.activeConfig)" href="/CheckConfig">Check Config</a></li>
+                            <li><a class="@(ViewBag.activeSettings)" href="/Settings">Settings</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
